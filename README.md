@@ -1,7 +1,7 @@
 # Twenty Arms, One Brain: Making a Swarm of Manipulators Work as a Single Unit
 
 <div align="center">
-<img src="images/so101-hero.png" alt="SO-101-LE ROBOT Industrial Swarm" width="520">
+<video src="images/so101-hero.mp4" alt="SO-101-LE ROBOT Industrial Swarm" width="520" autoplay loop muted playsinline></video>
 </div>
 
 I plugged eleven USB devices into one host — seven manipulators and four cameras — and on the twelfth, everything collapsed. Not in software. Physically. The USB 2.0 controller ran out of bandwidth, the kernel spat `Not enough bandwidth for new device state`, and the twelfth manipulator simply didn't appear in the system. A camera sharing the same hub started dropping frames.
@@ -31,7 +31,7 @@ A typical motherboard has 2–4 USB root controllers (Root Hubs), each with its 
 I went through four topology iterations before finding a configuration that stably holds eleven cameras and fourteen servo adapters on one host without frame drops. For twenty arms with full camera coverage — you need either a second host or a PCIe expansion. That's reality, and I'd rather it surfaces here than after you've printed the twentieth set of parts.
 
 <div align="center">
-<img src="images/so101-pair.png" alt="SO-101 leader-follower pair" width="520">
+<video src="images/so101-pair.mp4" alt="SO-101 leader-follower pair" width="520" autoplay loop muted playsinline></video>
 
 *SO-101 leader (white) and follower (black). Same hardware, different roles.*
 </div>
